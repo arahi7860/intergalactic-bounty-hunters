@@ -79,4 +79,8 @@ const newShip = await Bounty.updateOne(
   { ship: "The Milano 2" }
 );
 const rocketShip = await Bounty.find({ name: "Rocket" });
-console.log(rocketShip);
+// console.log(rocketShip);
+
+// All the updated data
+const bounties2 = await Bounty.find({});
+console.log(bounties2);
